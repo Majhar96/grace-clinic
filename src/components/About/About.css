@@ -1,0 +1,26 @@
+.aboutStyle{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+ /* Main heading of about */
+.heading{
+    text-Decoration: underline;
+    color: rgb(13 202 227);
+}
+
+/* about message */
+.aboutMessage{
+    color: rgb(252 140 39);
+    font-Family: cursive;
+    margin-Top: 100px
+}
+
+/* image style */
+.imageStyle{
+    width: 500px;
+    height: 500px;
+    border: 1px solid lightblue;
+    border-Radius: 50%
+}

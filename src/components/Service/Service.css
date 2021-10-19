@@ -1,0 +1,19 @@
+/* card style */
+    .cardStyle {
+        width: 400px; 
+        height: 560px; 
+        border: 1px solid gray; 
+        background-Color: rgb(199 226 255); 
+        border-Radius: 10px; 
+        margin-Left: 70px; 
+        margin-Top: 10px; 
+        margin-Bottom: 10px; 
+        padding: 5px
+    };
+
+/* image style */
+
+.imgStyle{
+     height: 300px;
+      border-Radius: 20% 40%;
+}
