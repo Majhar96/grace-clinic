@@ -1,19 +1,16 @@
-/* card style */
-    .cardStyle {
-        width: 400px; 
-        height: 560px; 
-        border: 1px solid gray; 
-        background-Color: rgb(199 226 255); 
-        border-Radius: 10px; 
-        margin-Left: 70px; 
-        margin-Top: 10px; 
-        margin-Bottom: 10px; 
-        padding: 5px
-    };
+.service{
+    width: 350px;
+    margin: 70px;
+    padding: 15px;
+    font-family:cursive;
+    background-color: rgb(102, 118, 131);
+    border: 1px solid rgb(142, 150, 156);
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgb(102 114 124);
+}
 
-/* image style */
-
-.imgStyle{
-     height: 300px;
-      border-Radius: 20% 40%;
+.card-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }

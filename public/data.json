@@ -19,7 +19,7 @@
     },
     {
         "id": 4,
-        "department": "medicine and gastrology",
+        "department": "Medicine and Gastrology",
         "description": "Focus on the digestive tract and the gallbladder, liver, bile ducts, and pancreas. Also do routine procedures such as colonoscopies, which look at the inside of your colon.",
         "img": "https://www.mukathospital.com/wp-content/uploads/2021/03/GastroEndo-Image.jpg"
     },
@@ -31,7 +31,7 @@
     },
     {
         "id": 6,
-        "department": "neurology",
+        "department": "Neurology",
         "description": "The Department of Neurology at grace-clinic offers a depth and breadth of surgical experience that few institutions can match. More than 20 full-time clinical and research faculty.",
         "img": "https://www.hsmc.ae/wp-content/uploads/2021/02/neurology-clinic.jpg"
     }

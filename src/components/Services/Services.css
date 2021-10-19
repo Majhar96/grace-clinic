@@ -1,9 +1,7 @@
- /* courses heading style */
-.coursesheadingStyle {
-    color: black;
-    font-Size: 50px;
-    letter-Spacing: 8px;
-    margin: 30px;
-    font-Family: cursive;
-
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px ;
+    
 }
+

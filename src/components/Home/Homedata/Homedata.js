@@ -1,4 +1,5 @@
 import React from 'react';
+import './Homedata.css'
 import { useEffect, useState } from 'react';
 import Service from '../../Service/Service';
 
@@ -15,19 +16,11 @@ const Homedata = () => {
 
     const information = services.slice(1, 5);
 
-    // services heading style
-    const servicesheadingStyle = {
-        color: 'black',
-        fontSize: '50px',
-        letterSpacing: '8px',
-        margin: '15px',
-        fontFamily: 'cursive'
-    }
 
     return (
         <div>
-            <h1 style={servicesheadingStyle}>Some of our services</h1>
-            <div xs={1} md={2} className="g-4">
+            <h1 >Some of our services</h1>
+            <div className="service-container">
                 {
                     information.map(service => <Service
                         key={service.id}

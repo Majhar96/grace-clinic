@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderIntro from './HeaderIntro/HeaderIntro';
 import HeaderNav from './HeaderNav/HeaderNav';
 
 
@@ -12,11 +11,6 @@ const Header = () => {
             {/* // navbar section */}
 
             <HeaderNav></HeaderNav>
-
-            {/* {// Intro Section} */}
-
-            <HeaderIntro></HeaderIntro>
-
 
         </header>
 
