@@ -19,7 +19,7 @@ const HeaderNav = () => {
                     <Link className="nav-link text-secondary" to="/about">About Us</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-secondary" to>Find A Doctor</Link>
+                    <Link className="nav-link text-secondary" to="/doctors">Find A Doctor</Link>
                 </li>
                 <button className="btn btn-outline-secondary btn-regular my-2 my-sm-0 " type="submit">Log In</button>
 

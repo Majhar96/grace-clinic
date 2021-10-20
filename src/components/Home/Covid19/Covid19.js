@@ -8,9 +8,9 @@ const Covid19 = () => {
             <h1>Covid-19 Vaccine Information</h1>
             <div className="vaccine-container">
                 <div>
-                    <h3>Vaccination options for Mayo Clinic patients</h3>
+                    <h3>Vaccination options for Grace Clinic patients</h3>
                     <br />
-                    <h6>COVID-19 vaccination options and guidelines vary widely by location and may change over time. See the latest information specific to Mayo Clinic campuses:</h6>
+                    <h6>COVID-19 vaccination options and guidelines vary widely by location and may change over time. See the latest information specific to Grace Clinic campuses:</h6>
                     <br />
                     <ul>
                         <li ><Link className="list">Dhaka</Link></li>
@@ -20,9 +20,9 @@ const Covid19 = () => {
                     </ul>
                 </div>
                 <div>
-                    <h3>Not a Mayo Clinic patient?</h3>
+                    <h3>Not a Grace Clinic patient?</h3>
                     <br />
-                    <h6>If you're not a Mayo Clinic patient, check your public health department's website for the most complete information.</h6>
+                    <h6>If you're not a Grace Clinic patient, check your public health department's website for the most complete information.</h6>
                     <br />
                     <input type="check" name="check" placeholder />
                 </div>

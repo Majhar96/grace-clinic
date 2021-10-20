@@ -18,9 +18,9 @@ const Homedata = () => {
 
 
     return (
-        <div className="container mt-2 mb-2">
+        <div className="home-container mt-2 mb-2">
             <h2>Departments</h2>
-            <div className="service-container">
+            <div className="home-service-container">
                 {
                     information.map(service => <Service
                         key={service.id}
