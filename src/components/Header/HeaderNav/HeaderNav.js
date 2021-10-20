@@ -1,31 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import icon from '../../../Images/favicon.ico'
 import './HeaderNav.css'
 
 const HeaderNav = () => {
+
+    const { user, logOut } = useAuth();
+
     return (
+        <nav className="navbar navbar-light bg-light">
+            <div className="container-fluid">
+                <ul className="nav nav-tabs m-4 b-5">
 
-        <div>
-            <ul className="nav nav-tabs m-4 b-5">
-                <img className="image ms-3" src={icon} alt="hospitalIcon" />
-                <li className="nav-item">
-                    <Link className="nav-link text-secondary" to="/home">Home</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link text-secondary" to="/services">Services</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link text-secondary" to="/about">About Us</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link text-secondary" to="/doctors">Find A Doctor</Link>
-                </li>
-                <button className="btn btn-outline-secondary btn-regular my-2 my-sm-0 " type="submit">Log In</button>
+                    <li className="nav-item">
+                        <Link className="nav-link text-secondary" to="/home">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-secondary" to="/services">Services</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-secondary" to="/about">About Us</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-secondary" to="/details">Departments</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-secondary" to="/doctors">Find A Doctor</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link text-info me-auto" to="/login">Log In</Link>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div>
+            </div>
+        </nav>
     );
 };
 

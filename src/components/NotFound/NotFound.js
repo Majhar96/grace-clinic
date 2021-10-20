@@ -5,6 +5,7 @@ const NotFound = () => {
 
     const errorStyle = {
         display: 'flex',
+        backgroundColour: '#ebf0f8'
 
     }
 
@@ -12,7 +13,7 @@ const NotFound = () => {
     const errorMassage = {
         display: 'flex',
         alignItems: 'center',
-        color: 'rgb(252 140 39)',
+        color: 'blue',
         fontFamily: 'cursive'
     }
 
@@ -28,7 +29,7 @@ const NotFound = () => {
     return (
         <div style={errorStyle}>
             <div style={errorMassage}>
-                <h1>Sorry!! PAGE NOT FOUND. <br />SEARCH VALID PAGE PLEASE!!</h1>
+                <h1>Sorry!! PAGE NOT FOUND.</h1>
             </div>
             <div>
                 <img style={imageStyle} src={img} alt="error" />
