@@ -1,16 +1,11 @@
 import React from 'react';
-import './Homedata.css'
-import { useEffect, useState } from 'react';
+import './Homedata.css';
 import Service from '../../Service/Service';
+import useService from '../../../hooks/useService';
 
 const Homedata = () => {
 
-    const [services, setServices] = useState([]);
-    useEffect(() => {
-        fetch('./data.json')
-            .then(res => res.json())
-            .then(data => setServices(data));
-    }, []);
+    const [services] = useService();
 
     // taking four services
 
