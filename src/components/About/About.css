@@ -1,26 +1,19 @@
-.aboutStyle{
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-}
-
- /* Main heading of about */
-.heading{
-    text-Decoration: underline;
-    color: rgb(13 202 227);
-}
 
 /* about message */
 .aboutMessage{
-    color: rgb(252 140 39);
-    font-Family: cursive;
-    margin-Top: 100px
+    text-align: justify;
+    padding: 40px;
+    background-color: #ebf0f8;
 }
 
-/* image style */
-.imageStyle{
-    width: 500px;
-    height: 500px;
-    border: 1px solid lightblue;
-    border-Radius: 50%
+.aboutMessage h2{
+    color: rgb(59, 59, 65);
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.aboutMessage ul li{
+    font-weight: bold;
+    color: rgb(84, 84, 88);
+    text-align: justify
 }

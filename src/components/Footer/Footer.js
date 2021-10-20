@@ -1,9 +1,16 @@
 import React from 'react';
+import Copyright from './copyright/Copyright';
+import Place from './Place/Place';
 
 const Footer = () => {
     return (
         <div>
-            <h2>This is footer</h2>
+            <div>
+                <Place></Place>
+            </div>
+            <div>
+                <Copyright></Copyright>
+            </div>
         </div>
     );
 };

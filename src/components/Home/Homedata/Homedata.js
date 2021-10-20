@@ -14,12 +14,12 @@ const Homedata = () => {
 
     // taking four services
 
-    const information = services.slice(1, 5);
+    const information = services.slice(1, 3);
 
 
     return (
-        <div>
-            <h1 >Some of our services</h1>
+        <div className="container mt-2 mb-2">
+            <h2>Departments</h2>
             <div className="service-container">
                 {
                     information.map(service => <Service

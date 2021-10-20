@@ -1,7 +1,14 @@
+.container h2{
+    text-align: center;
+    color: lightslategray;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid lightslategray;
+}
+
 .service-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap:20px ;
-    
+   
 }
 
