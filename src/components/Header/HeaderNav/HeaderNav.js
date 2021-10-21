@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import icon from '../../../Images/favicon.ico'
 import './HeaderNav.css'
 
 const HeaderNav = () => {
@@ -28,8 +27,9 @@ const HeaderNav = () => {
                     <li className="nav-item">
                         <Link className="nav-link text-secondary" to="/doctors">Find A Doctor</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link text-info me-auto" to="/login">Log In</Link>
+
+                    <li className="nav-item login">
+                        <Link className="nav-link text-info " to="/login">Log In</Link>
                     </li>
 
                 </ul>
