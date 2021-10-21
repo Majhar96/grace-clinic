@@ -1,52 +1,68 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, } from "firebase/auth";
-import { useEffect, useState } from "react";
-import initializeAuthentication from "../components/Login/Firebase/firebase.init";
+import { useEffect, useState } from "react"
+import initializeAuthentication from '../components/Login/Firebase/firebase.init';
+import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+
 
 initializeAuthentication();
 
 const useFirebase = () => {
-    const [users, setUsers] = useState({});
+    // state declare
+    const [user, setUser] = useState({});
+    const [error, setError] = useState('');
 
-    const auth = getAuth();
+    const auth = getAuth()
 
+    // variable
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
 
-
+    // login with google
     const signInUsingGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                setUsers(result.users)
+                console.log(result.user);
+                setUser(result.user);
             })
-
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
 
+    // sign in with github
+    const signInUsingGithub = () => {
+        signInWithPopup(auth, githubProvider)
+            .then(result => {
+                setUser(result.user);
+            })
+    }
 
-    // user state change 
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, user => {
-            if (user) {
-                setUsers(users)
-            }
-            else {
-                setUsers({})
-            }
-        });
-        return () => unsubscribe;
 
-    }, [])
-
-    const logOut = () => {
+    // logout function
+    const logout = () => {
         signOut(auth)
-            .then(() => { });
+            .then(() => {
+                setUser({});
+            })
     }
+
+
+    // useEffect
+    useEffect(() => {
+        onAuthStateChanged(auth, user => {
+            if (user) {
+                setUser(user);
+            }
+        })
+    });
 
     return {
-        users,
+        user,
+        error,
         signInUsingGoogle,
-        logOut
+        signInUsingGithub,
+        logout
     }
 }
 
 export default useFirebase;
-

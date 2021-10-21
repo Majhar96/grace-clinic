@@ -1,6 +1,6 @@
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile } from "firebase/auth";
 import React, { useState } from 'react';
-// import useAuth from "../../../hooks/useAuth";
+import useAuth from "../../../hooks/useAuth";
 import './Login.css'
 
 const Login = () => {
@@ -14,7 +14,8 @@ const Login = () => {
 
     const auth = getAuth();
 
-    // const { user, logOut } = useAuth();
+    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGithub } = useAuth();
 
 
     // handle email & password
@@ -149,7 +150,12 @@ const Login = () => {
                     <hr />
                     <div className="row mb-3">
                         <div className="col-sm-10 ms-5">
-                            <button type="submit" className="btn btn-success"> Sign In Google</button>
+                            <button type="submit" onClick={signInUsingGoogle} className="btn btn-success"> Sign In Google</button>
+                        </div>
+                    </div>
+                    <div className="row mb-3">
+                        <div className="col-sm-10 ms-5">
+                            <button type="submit" onClick={signInUsingGithub} className="btn btn-success"> Sign In Github</button>
                         </div>
                     </div>
 

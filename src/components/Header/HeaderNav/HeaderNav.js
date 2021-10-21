@@ -5,7 +5,7 @@ import './HeaderNav.css'
 
 const HeaderNav = () => {
 
-    const { user, logOut } = useAuth();
+    const { user, logout } = useAuth();
 
     return (
         <nav className="navbar navbar-light bg-light">
@@ -31,6 +31,8 @@ const HeaderNav = () => {
                     <li className="nav-item login">
                         <Link className="nav-link text-info " to="/login">Log In</Link>
                     </li>
+                    <span className="mt-2">{user.displayName}</span>
+                    {user?.email && <button onClick={logout} className="mb-1 ms-2 text-danger ">Log out</button>}
 
                 </ul>
 

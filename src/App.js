@@ -10,6 +10,7 @@ import Doctors from './components/Doctors/Doctors';
 import Department from './components/Departments/Departments/Department';
 import Login from './components/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 
@@ -38,12 +39,12 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/details/:detailsId">
+            <PrivateRoute path="/details/:detailsId">
               <Department></Department>
-            </Route>
-            <Route path="/doctors">
+            </PrivateRoute>
+            <PrivateRoute path="/doctors">
               <Doctors></Doctors>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

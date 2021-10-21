@@ -13,10 +13,10 @@ const Covid19 = () => {
                     <h6>COVID-19 vaccination options and guidelines vary widely by location and may change over time. See the latest information specific to Grace Clinic campuses:</h6>
                     <br />
                     <ul>
-                        <li ><Link className="list">Dhaka</Link></li>
-                        <li ><Link className="list">Chittagong</Link></li>
-                        <li ><Link className="list">Cumilla</Link></li>
-                        <li><Link className="list">Rongpur</Link></li>
+                        <li ><Link className="list" to="">Dhaka</Link></li>
+                        <li ><Link className="list" to="">Chittagong</Link></li>
+                        <li ><Link className="list" to="">Cumilla</Link></li>
+                        <li><Link className="list" to="">Rongpur</Link></li>
                     </ul>
                 </div>
                 <div>
@@ -24,7 +24,7 @@ const Covid19 = () => {
                     <br />
                     <h6>If you're not a Grace Clinic patient, check your public health department's website for the most complete information.</h6>
                     <br />
-                    <input type="check" name="check" placeholder />
+                    <input type="check" name="check" />
                 </div>
             </div>
         </div>

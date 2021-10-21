@@ -35,7 +35,7 @@ const About = () => {
 
 
     return (
-        <div>
+        <div >
             <Carousel style={carouselsStyle}>
                 <Carousel.Item>
                     <img

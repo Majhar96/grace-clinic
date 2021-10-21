@@ -10,7 +10,7 @@ const Copyright = () => {
 
     return (
         <div className="copyright-part">
-            <span>Copyright {copyright} 2021 Square Hospitals Ltd. Developed by Majharul Islam.</span>
+            <span>Copyright {copyright} 2021 Grace Clinic Ltd. Developed by Majharul Islam.</span>
         </div>
     );
 };
