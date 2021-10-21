@@ -11,6 +11,7 @@ import Department from './components/Departments/Departments/Department';
 import Login from './components/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Career from './components/Career/Career';
 
 
 
@@ -39,9 +40,12 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <PrivateRoute path="/details/:detailsId">
-              <Department></Department>
+            <PrivateRoute path="/career">
+              <Career></Career>
             </PrivateRoute>
+            <Route path="/details/:detailsId">
+              <Department></Department>
+            </Route>
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
             </PrivateRoute>

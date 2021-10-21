@@ -22,7 +22,7 @@ const HeaderNav = () => {
                         <Link className="nav-link text-secondary" to="/about">About Us</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-secondary" to="/details">Departments</Link>
+                        <Link className="nav-link text-secondary" to="/career">Career</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link text-secondary" to="/doctors">Find A Doctor</Link>
